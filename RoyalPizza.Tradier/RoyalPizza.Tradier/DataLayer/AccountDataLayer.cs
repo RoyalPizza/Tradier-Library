@@ -158,6 +158,26 @@ namespace RoyalPizza.Tradier.DataLayer
         /// 
         /// </summary>
         /// <param name="accountId">Account number</param>
+        /// /// <param name="orderId">Order Id </param>
+        /// <param name="includeTags">Include order tag on response</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public async Task<Order?> GetOrderAsync(string accountId, string orderId, bool includeTags = false)
+        {
+            if (string.IsNullOrEmpty(accountId))
+                throw new ArgumentNullException(nameof(accountId));
+            if (string.IsNullOrEmpty(orderId))
+                throw new ArgumentNullException(nameof(orderId));
+
+            string url = $"accounts/{accountId}/orders?includeTags={includeTags}";
+            var order = await GetFromJsonAsync<Order>(url);
+            return order;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="accountId">Account number</param>
         /// <param name="includeTags">Include order tag on response</param>
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>

@@ -24,6 +24,7 @@ namespace RoyalPizza.Tradier.Models.Account
         /// 
         /// </summary>
         [JsonPropertyName("type")]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public HistoryType Type { get; set; }
 
         /// <summary>

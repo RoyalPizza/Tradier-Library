@@ -10,8 +10,13 @@ namespace RoyalPizza.Tradier.Enums
         /// <summary>
         /// 
         /// </summary>
+        None,
+
+        /// <summary>
+        /// 
+        /// </summary>
         [Description("Margin")]
-        Margin = 1,
+        Margin,
 
         /// <summary>
         /// 

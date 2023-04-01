@@ -10,8 +10,13 @@ namespace RoyalPizza.Tradier.Enums
         /// <summary>
         /// 
         /// </summary>
+        None,
+
+        /// <summary>
+        /// 
+        /// </summary>
         [Description("equity")]
-        Equity = 1,
+        Equity,
 
         /// <summary>
         /// 

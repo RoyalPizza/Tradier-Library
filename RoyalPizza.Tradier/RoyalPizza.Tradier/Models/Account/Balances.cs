@@ -30,6 +30,7 @@ namespace RoyalPizza.Tradier.Models.Account
         /// Type of the account
         /// </summary>
         [JsonPropertyName("account_type")]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public AccountType AccountType { get; set; }
 
         /// <summary>

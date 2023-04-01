@@ -10,8 +10,13 @@ namespace RoyalPizza.Tradier.Enums
         /// <summary>
         /// 
         /// </summary>
+        None,
+
+        /// <summary>
+        /// 
+        /// </summary>
         [Description("day")]
-        Day = 1,
+        Day,
 
         /// <summary>
         /// 

@@ -10,6 +10,11 @@ namespace RoyalPizza.Tradier.Enums
         /// <summary>
         /// 
         /// </summary>
+        None = 0,
+
+        /// <summary>
+        /// 
+        /// </summary>
         /// <remarks>
         /// Single or multi leg
         /// </remarks>

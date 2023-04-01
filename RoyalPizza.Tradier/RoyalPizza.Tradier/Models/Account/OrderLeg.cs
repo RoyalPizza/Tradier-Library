@@ -16,6 +16,7 @@ namespace RoyalPizza.Tradier.Models.Account
         /// Single-leg, One of: market, limit, stop, stop_limit, Multi-leg, One of: market, debit, credit, even
         /// </summary>
         [JsonPropertyName("type")]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public OrderType Type { get; set; }
 
         /// <summary>
@@ -28,6 +29,7 @@ namespace RoyalPizza.Tradier.Models.Account
         /// Equity, One of: buy, buy_to_cover, sell, sell_short, Option, One of: buy_to_open, buy_to_close, sell_to_open, sell_to_close
         /// </summary>
         [JsonPropertyName("side")]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public OrderSide Side { get; set; }
 
         /// <summary>
@@ -40,12 +42,14 @@ namespace RoyalPizza.Tradier.Models.Account
         /// One of: open, partially_filled, filled, expired, canceled, pending, rejected, error
         /// </summary>
         [JsonPropertyName("status")]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public OrderStatus Status { get; set; }
 
         /// <summary>
         /// One of: day, pre, post, gtc
         /// </summary>
         [JsonPropertyName("duration")]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public OrderDuration Duration { get; set; }
 
         /// <summary>
@@ -100,6 +104,7 @@ namespace RoyalPizza.Tradier.Models.Account
         /// One of: equity, option, combo, multileg
         /// </summary>
         [JsonPropertyName("class")]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public OrderClass Class { get; set; }
 
         /// <summary>
