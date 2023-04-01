@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace RoyalPizza.Tradier.Enums
 {
@@ -23,7 +18,7 @@ namespace RoyalPizza.Tradier.Enums
         /// </summary>
         [Description("Cash")]
         Cash,
-        
+
         /// <summary>
         /// 
         /// </summary>
